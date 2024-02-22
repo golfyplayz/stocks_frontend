@@ -12,16 +12,15 @@
 <body>
     <div id="form" class="form">
         <form>
-            <input type="number" name="stock" id="stockInt" placeholder="Inital Price">
-            <input type="number" name="stock" id="stockFin" placeholder="Final Price">
-            <input type="number" name="stock" id="stockAmt" placeholder="Amount">
+            <input type="number" name="stock" id="stockInt" placeholder="Inital Price" class="number">
+            <br>
+            <input type="number" name="stock" id="stockFin" placeholder="Final Price" class="number">
+            <br>
+            <input type="number" name="stock" id="stockAmt" placeholder="Amount" class="number">
+            <br>
             <input type="submit" value="Calculate" id="submit">
         </form>
-        <div id="output" class="output">
-            <h2>Output</h2>
-            <h4 id="outputText">placeholder</h4>
-            <button id="clear">Clear</button>
-        </div>
+        <div id="output" class="output"></div>
     </div>
     <script src="./js/index.js"></script>
 </body>
