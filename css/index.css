@@ -1,6 +1,15 @@
-.output {
-    visibility: hidden;
-}
 * {
     font-family: "lato";
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.output {
+    visibility: hidden;
 }
