@@ -26,7 +26,7 @@ submit.addEventListener('click', (event) => {
     let init = document.getElementById('stockInt').value;
     let fin = document.getElementById('stockFin').value;
     let amnt = document.getElementById('stockAmt').value;
-    let total = calculate(init, fin, amnt).toString();
+    let total = calculate(init, fin, amnt).toFixed(2).toString();
     console.log(total);
     let clear = checkIfOpen();
     if(!clear) {
@@ -39,7 +39,7 @@ submit.addEventListener('click', (event) => {
         let outputAmnt = document.createElement('h3')
         outputDiv.appendChild(outputAmnt);
         outputAmnt.id = 'outputAmnt';
-        outputAmnt.innerHTML = total;
+        outputAmnt.innerHTML = '$'+total;
     }
     else {
         console.log('div');
