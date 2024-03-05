@@ -1,8 +1,9 @@
 body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    background-color: rgb(8, 52, 86);
+    background: linear-gradient(140deg, #007696, #011c3f);
 }
 
 .form {
@@ -10,7 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10% auto auto auto;
+    margin: 30% auto auto auto;
     background-color: rgb(0, 118, 150);
     width: 50%;
     border-radius: 10px;
@@ -43,4 +44,12 @@ body {
     margin: 5% auto auto auto;
     width: 40%;
     color: white;
+}
+
+#admin {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 10%;
 }
