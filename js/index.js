@@ -3,6 +3,7 @@ const stockInt = document.getElementById('stockInt');
 const stockFin = document.getElementById('stockFin');
 const stockAmt = document.getElementById('stockAmt');
 const outputDiv = document.getElementById('output');
+const adminButton = document.getElementById('admin');
 
 const calculate = (inital, final, amount) => {
     let result = (final - inital) * amount;
@@ -56,4 +57,9 @@ submit.addEventListener('click', (event) => {
         outputAmnt.remove();
         header.remove();
     }
+})
+
+adminButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.location.href = 'admin.html';
 })
