@@ -43,9 +43,21 @@ body {
 }
 
 .form input[type="submit"] {
+    margin-top: 13%;
     box-sizing: content-box;
     cursor: pointer;
     width: 97%;
+}
+
+.form label {
+    justify-content: left;
+    display: block;
+    color: white;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    padding: 10% 0 0 0;
 }
 
 .output {
@@ -74,10 +86,23 @@ body {
 @media (min-width: 800px) {
     .form {
         width: 40%;
-        margin: 15% auto 0 auto;
+        margin: 15% auto auto auto;
     }
     .output {
         width: 40%;
+    }
+    #admin {
+        width: 5%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .form {
+        width: 30%;
+        margin: 5% auto auto auto;
+    }
+    .output {
+        width: 30%;
     }
     #admin {
         width: 5%;
