@@ -56,24 +56,14 @@ body {
     color: white;
 }
 
-#admin {
-    font-family: 'Lato', sans-serif;
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    width: 10%;
-}
-
 @media (max-width: 650px) {
     .form {
         width: 80%;
         margin: 10% auto 0 auto;
     }
-
     .output {
         width: 80%;
     }
-
     #admin {
         width: 15%;
     }
@@ -83,11 +73,9 @@ body {
     .form {
         margin: 10% auto 0 auto;
     }
-
     .output {
         width: 60%;
     }
-
     #admin {
         width: 8%;
     }

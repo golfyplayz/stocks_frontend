@@ -1,5 +1,4 @@
 const submit = document.getElementById('submit');
-const clear = document.getElementById('clear');
 const stockInt = document.getElementById('stockInt');
 const stockFin = document.getElementById('stockFin');
 const stockAmt = document.getElementById('stockAmt');
@@ -35,11 +34,20 @@ submit.addEventListener('click', (event) => {
         let header = document.createElement('h1');
         outputDiv.appendChild(header);
         header.id = 'outputHeader'
-        header.innerHTML = 'Money made';
+        if(total >= 0) {
+            header.innerHTML = 'Money made';
+        } else {
+            header.innerHTML = 'Money lost';
+        }
         let outputAmnt = document.createElement('h3')
         outputDiv.appendChild(outputAmnt);
         outputAmnt.id = 'outputAmnt';
-        outputAmnt.innerHTML = '$'+total;
+        if (total[0] === '-') {
+            total = total.substr(1);
+            outputAmnt.innerHTML = '-$'+total;
+        } else {
+            outputAmnt.innerHTML = '$'+total;
+        }
     }
     else {
         console.log('div');
@@ -48,9 +56,4 @@ submit.addEventListener('click', (event) => {
         outputAmnt.remove();
         header.remove();
     }
-})
-
-clear.addEventListener('click', (event) => {
-    event.preventDefault();
-    reset()
 })
