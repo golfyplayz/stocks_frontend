@@ -59,10 +59,10 @@ body {
     padding: 10% 0 0 0;
 }
 
-#returnLink {
+a {
     width: 10%;
     box-sizing: content-box;
-    margin-top: 1%;
+    margin-top: 5%;
     margin-left: 1%;
     cursor: pointer;
 }
