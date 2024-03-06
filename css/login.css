@@ -15,6 +15,10 @@ body {
     background: linear-gradient(140deg, #007696, #011c3f);
 }
 
+h1 {
+    color: white;
+}
+
 .login {
     display: flex;
     flex-direction: column;
