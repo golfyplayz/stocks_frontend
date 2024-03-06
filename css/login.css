@@ -16,53 +16,73 @@ body {
 }
 
 .login {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.loginForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 20% auto auto auto;
+    margin: 30% auto 0 auto;
+    background-color: rgba(6, 58, 74, 0.6);
     background-color: rgba(6, 58, 74, 0.6);
     width: 60%;
     border-radius: 10px;
-    white-space: nowrap;
 }
 
-.loginForm input {
-    margin: 25px 0px 0px 0px;
+.login form {
+    width: 80%;
+}
+
+.login input {
+    margin: 3% 0px 0px 0px;
     padding: 10px;
     border-radius: 5px;
-    width: 80%;
+    width: 97%;
     border: none;
-    box-shadow: #09599b;
+    box-shadow: #000000;
 }
 
-.loginForm .label {
-    margin-top: 2%;
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    width: 80%;
-}
-
-.loginForm input[type="submit"] {
-    margin-bottom: 5%;
+.login input[type="submit"] {
+    margin-top: 13%;
+    margin-bottom: 10%;
     box-sizing: content-box;
     cursor: pointer;
-    width: 80%;
+    width: 97%;
 }
 
-@media only screen and (min-width: 700px) {
-    .loginForm {
-        margin: 10% auto auto auto;
+.login label {
+    text-align: left;
+    display: block;
+    color: white;
+    font-size: 1.7em;
+    font-weight: bold;
+    width: 80%;
+    padding: 10% 0 0 0;
+}
+
+#returnLink {
+    width: 10%;
+    box-sizing: content-box;
+    margin-top: 1%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    .login {
+        width: 80%;
+        margin: 10% auto 0 auto;
+    }
+}
+@media (min-width: 800px) {
+    .login {
+        width: 40%;
+        margin: 15% auto auto auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .login {
+        width: 40%;
+        margin: 9% auto auto auto;
     }
 }
