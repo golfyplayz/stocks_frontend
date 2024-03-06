@@ -58,8 +58,3 @@ submit.addEventListener('click', (event) => {
         header.remove();
     }
 })
-
-adminButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    window.location.href = 'admin.html';
-})

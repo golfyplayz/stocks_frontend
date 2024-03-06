@@ -29,7 +29,7 @@ body {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 20% auto 0 auto;
+    margin: 20% auto auto auto;
     background-color: rgba(6, 58, 74, 0.6);
     width: 60%;
     border-radius: 10px;
@@ -59,4 +59,10 @@ body {
     box-sizing: content-box;
     cursor: pointer;
     width: 80%;
+}
+
+@media only screen and (min-width: 700px) {
+    .loginForm {
+        margin: 10% auto auto auto;
+    }
 }
