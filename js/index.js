@@ -4,7 +4,6 @@ const stockFin = document.getElementById('stockFin');
 const stockAmt = document.getElementById('stockAmt');
 const outputDiv = document.getElementById('output');
 const adminButton = document.getElementById('admin');
-const adminButton = document.getElementById('admin');
 
 const calculate = (inital, final, amount) => {
     let result = (final - inital) * amount;
