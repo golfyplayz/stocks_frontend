@@ -15,7 +15,11 @@ body {
     background: linear-gradient(140deg, #007696, #011c3f);
 }
 
-.form {
+h1 {
+    color: white;
+}
+
+.login {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,12 +32,12 @@ body {
     border-radius: 10px;
 }
 
-.form form {
+.login form {
     width: 80%;
 }
 
-.form input {
-    margin: 4% 0 0 0;
+.login input {
+    margin: 3% 0px 0px 0px;
     padding: 10px;
     border-radius: 5px;
     width: 97%;
@@ -41,14 +45,15 @@ body {
     box-shadow: #000000;
 }
 
-.form input[type="submit"] {
+.login input[type="submit"] {
     margin-top: 13%;
+    margin-bottom: 10%;
     box-sizing: content-box;
     cursor: pointer;
     width: 97%;
 }
 
-.form label {
+.login label {
     text-align: left;
     display: block;
     color: white;
@@ -56,17 +61,6 @@ body {
     font-weight: bold;
     width: 80%;
     padding: 10% 0 0 0;
-}
-
-.output {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 5% auto auto auto;
-    width: 80%;
-    width: 80%;
-    color: white;
 }
 
 a input {
@@ -78,39 +72,21 @@ a input {
 }
 
 @media (max-width: 650px) {
-    .form {
+    .login {
         width: 80%;
         margin: 10% auto 0 auto;
     }
-    .output {
-        width: 80%;
-    }
-    #admin {
-        width: 15%;
-    }
 }
 @media (min-width: 800px) {
-    .form {
+    .login {
         width: 40%;
         margin: 15% auto auto auto;
-    }
-    .output {
-        width: 40%;
-    }
-    #admin {
-        width: 5%;
     }
 }
 
 @media (min-width: 1000px) {
-    .form {
+    .login {
         width: 40%;
-        margin: 4% auto auto auto;
-    }
-    .output {
-        width: 40%;
-    }
-    #admin {
-        width: 5%;
+        margin: 9% auto auto auto;
     }
 }
