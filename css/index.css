@@ -67,6 +67,7 @@ body {
 @media (max-width: 650px) {
     .form {
         width: 80%;
+        margin: 10% auto 0 auto;
     }
 
     .output {
@@ -75,5 +76,19 @@ body {
 
     #admin {
         width: 15%;
+    }
+}
+
+@media (min-width: 750px) {
+    .form {
+        margin: 10% auto 0 auto;
+    }
+
+    .output {
+        width: 60%;
+    }
+
+    #admin {
+        width: 8%;
     }
 }
