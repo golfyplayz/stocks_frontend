@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/login.css" type="text/css" rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
-    <h1>test</h1>
+    <div class="container" id="container">
+        <div class="login" id="login">
+            <form id="loginForm" class="loginForm">
+                <label for="username" class="label" id="userLabel">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username" class="input">
+                <br>
+                <label for="password" class="label">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" class="input">
+                <br>
+                <input type="submit" value="Login" id="submit">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
