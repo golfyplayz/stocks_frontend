@@ -13,7 +13,7 @@ const calculate = (inital, final, amount) => {
 }
 
 function fetchTest() { 
-    fetch('https://www.verdoornstocks.net/test')
+    fetch('https://www.verdoornstocks.net/')
     .then((response) => response.json())
     .then((json) => console.log(json));
 }
