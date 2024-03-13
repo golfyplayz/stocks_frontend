@@ -3,6 +3,8 @@ const express = require('express');
 const app = express()
 const PORT = 8000
 
+console.log('server is running')
+
 app.get('/', (req, res) => {
   res.send('Hello World')
 })
