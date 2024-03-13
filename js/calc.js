@@ -12,9 +12,10 @@ const calculate = (inital, final, amount) => {
     return result;
 }
 
-async function fetchTest() { 
-    let response = await fetch('https://www.verdoornstocks.net/');
-    console.log(response);
+function fetchTest() { 
+    fetch('https://www.verdoornstocks.net/')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
 }
 
 const checkIfShouldRemove = () => {
