@@ -1,18 +1,11 @@
-const express = require('express');
-
+// Import the express library here
+const express = require('express')
+// Instantiate the app here
 const app = express()
-const PORT = 8000
 
-console.log('server is running')
+const PORT = process.env.PORT || 4001;
 
-app.get('/', (req, res) => {
-  res.send('Hello World')
-})
-
-app.get('/about', (req, res) => {
-  res.send('About route 🎉 ')
-})
-
+// Invoke the app's `.listen()` method below:
 app.listen(PORT, () => {
-  console.log(`✅ Server is running on port ${PORT}`);
+  console.log(`Server started on port ${PORT}`)
 })
