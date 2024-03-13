@@ -12,6 +12,14 @@ const calculate = (inital, final, amount) => {
     return result;
 }
 
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+
 const checkIfShouldRemove = () => {
     if(stockInt.value==='' || stockFin.value==='' || stockAmt.value==='') {
         console.log('true');
@@ -60,4 +68,5 @@ submit.addEventListener('click', (event) => {
         outputAmnt.remove();
         header.remove();
     }
+    httpGet('https://verdoornstocks.net/test')
 })
