@@ -13,7 +13,7 @@ const calculate = (inital, final, amount) => {
 }
 
 async function fetchTest() { 
-    let response = await fetch('https://verdoornstocks.net/test');
+    let response = await fetch('https://www.verdoornstocks.net/test');
     console.log(response);
 }
 
