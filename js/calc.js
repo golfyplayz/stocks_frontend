@@ -12,12 +12,9 @@ const calculate = (inital, final, amount) => {
     return result;
 }
 
-function httpGet(theUrl)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
+async function fetchTest() { 
+    let response = await fetch('https://verdoornstocks.net/test');
+    console.log(response);
 }
 
 const checkIfShouldRemove = () => {
@@ -68,5 +65,5 @@ submit.addEventListener('click', (event) => {
         outputAmnt.remove();
         header.remove();
     }
-    console.log(httpGet('https://verdoornstocks.net/test'));
+    fetchTest();
 })
