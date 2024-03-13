@@ -68,5 +68,5 @@ submit.addEventListener('click', (event) => {
         outputAmnt.remove();
         header.remove();
     }
-    httpGet('https://verdoornstocks.net/test')
+    console.log(httpGet('https://verdoornstocks.net/test'));
 })
