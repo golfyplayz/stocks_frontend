@@ -12,8 +12,8 @@ const calculate = (inital, final, amount) => {
     return result;
 }
 
-function fetchTest() { 
-    fetch('https://www.verdoornstocks.net/')
+function fetchTest() {
+    fetch('https://stocks-backend-sigma.vercel.app/test')
     .then((response) => response.json())
     .then((json) => console.log(json));
 }
